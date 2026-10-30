@@ -1,93 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form | OL University</title>
+    <title>Student Registration Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <h2>🎓 OL University</h2>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="form.html">Register</a>
-            <a href="thanks.html">Thank You</a>
-        </div>
+
+    <header>
+        <h1>Student Registration Website</h1>
+        <p>Welcome to Our Student Portal</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="form.html">Register</a>
     </nav>
 
-    <main class="form-section">
-        <div class="form-heading">
-            <span class="badge">Student Admissions 2026</span>
-            <h1>Student Registration</h1>
-            <p>Fill in your details below to continue.</p>
-        </div>
+    <section class="container">
 
-        <form action="thanks.html" method="get" class="registration-form">
-            <div class="form-grid">
-                <div class="field">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name"
-                           placeholder="Enter your full name" required>
-                </div>
+        <img src="me.jpg" alt="My Picture" class="profile"style="width: 100px;">
 
-                <div class="field">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email"
-                           placeholder="example@email.com" required>
-                </div>
+        <h2>Welcome Students!</h2>
 
-                <div class="field">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone"
-                           placeholder="Enter your phone number" required>
-                </div>
+        <p>
+            Welcome to our Student Registration Website.
+            Students can register themselves by filling
+            out the registration form.
+        </p>
 
-                <div class="field">
-                    <label for="dob">Date of Birth</label>
-                    <input type="date" id="dob" name="dob" required>
-                </div>
+        <a href="form.html" class="btn">Register Now</a>
 
-                <div class="field">
-                    <label for="gender">Gender</label>
-                    <select id="gender" name="gender" required>
-                        <option value="">Select gender</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Other</option>
-                    </select>
-                </div>
+    </section>
 
-                <div class="field">
-                    <label for="program">Select Program</label>
-                    <select id="program" name="program" required>
-                        <option value="">Choose a program</option>
-                        <option>BS Artificial Intelligence</option>
-                        <option>BS Computer Science</option>
-                        <option>BS Cyber Security</option>
-                        <option>BS Software Engineering</option>
-                    </select>
-                </div>
+    <footer>
+        <p>Student Registration Website | 2026</p>
+    </footer>
 
-                <div class="field full">
-                    <label for="address">Home Address</label>
-                    <textarea id="address" name="address"
-                              placeholder="Enter your address" required></textarea>
-                </div>
-            </div>
-
-            <label class="terms">
-                <input type="checkbox" required>
-                I confirm that the information provided is correct.
-            </label>
-
-            <button type="submit" class="btn submit-btn">
-                Submit Registration →
-            </button>
-            <p class="form-note">Demo form for the Lab 6 assignment.</p>
-        </form>
-    </main>
-
-    <footer>© 2026 OL University | Student Registration Website</footer>
 </body>
 </html>
